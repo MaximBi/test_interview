@@ -24,7 +24,7 @@ public class WorkerManager {
                     break;
                 case 3:
                     AnotherWorkerCreator awc = new AnotherWorkerCreator();
-                    AnotherWorker anotherWorker = awc.create("C:\\Users\\Maxim\\IdeaProjects\\untitled\\Data\\manager.txt");
+                    AnotherWorker anotherWorker = awc.create("C:\\Users\\Maxim\\IdeaProjects\\untitled\\Data\\another_worker.txt");
                     listWorker.add(anotherWorker);
                     break;
                 case 4:
