@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public abstract class Worker {
+public class Worker {
     private String position;
     private String name;
     private Date birthday;
