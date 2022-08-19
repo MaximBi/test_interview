@@ -2,9 +2,9 @@ import java.util.Date;
 
 public class Worker {
     private String position;
-    private String name;
-    private Date birthday;
-    private Date startDate;
+    private final String name;
+    private final Date birthday;
+    private final Date startDate;
 
     public Worker(String position, String name, Date birthday, Date startDate) {
         this.position = position;
@@ -15,18 +15,6 @@ public class Worker {
 
     public void setPosition(String position) {
         this.position = position;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
-    }
-
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
     }
 
     public String getPosition() {
@@ -43,6 +31,11 @@ public class Worker {
 
     public Date getStartDate() {
         return startDate;
+    }
+
+    @Override
+    public String toString() {
+        return this.position + " " + this.name  + " " + this.startDate;
     }
 }
 
