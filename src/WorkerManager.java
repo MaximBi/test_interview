@@ -14,8 +14,8 @@ public class WorkerManager {
             switch (opNumber) {
                 case 1:
                     WorkerCreater wc = new WorkerCreater();
-                    Worker worker = wc.create("../Data/workers.txt");
-
+                    Worker worker = wc.create("C:\\Users\\Maxim\\IdeaProjects\\untitled\\Data\\workers.txt");
+                    listWorker.add(worker);
                     break;
                 case 2:
 
